@@ -20,7 +20,7 @@ public class ExtentReportSetup implements ITestListener {
     public void onStart(ITestContext context){
 
         String fileName = ExtentReportManager.getExtentReportNameWithTimeStamp();
-        String fullReportPath = System.getProperty("user.dir") + "\\extent.reports\\" + fileName;
+        String fullReportPath = System.getProperty("user.dir") + "/extent.reports/" + fileName;
 
         extentReports = ExtentReportManager.createInstance(fullReportPath, "QA Automation API Report", "QA Automation API Report");
     }
